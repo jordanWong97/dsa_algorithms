@@ -21,6 +21,26 @@ const insertNode = (head, value, index) => {
   return head;
 };
 
+//recursive
+// const insertNode = (head, value, index, count = 0) => {
+
+//   if(index === 0){
+//     const newNode = new Node(value);
+//     newNode.next = head;
+//     return newNode;
+//   }
+
+//   if(count === index - 1){
+//     const nextNode = head.next;
+//     head.next = new Node(value);
+//     head.next.next = nextNode;
+//     return head;
+//   }
+
+//   insertNode(head.next, value, index, count + 1);
+//   return head;
+// }
+
 module.exports = {
   insertNode,
 };
