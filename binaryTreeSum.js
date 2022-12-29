@@ -18,6 +18,15 @@ const treeSum = (root) => {
   return sum;
 };
 
+//recursive dfs sum
+//do not need to worry about whether or not left or right is null because
+//if side is null, counts as 0 from initial if statement
+
+// const treeSum = (root) => {
+//   if(root === null) return 0;
+//   return root.val + treeSum(root.left) + treeSum(root.right);
+// }
+
 module.exports = {
   treeSum,
 };
