@@ -27,6 +27,23 @@ const treeSum = (root) => {
 //   return root.val + treeSum(root.left) + treeSum(root.right);
 // }
 
+//bfs
+// const treeSum = (root) => {
+//   if(root === null) return 0;
+
+//   let sum = 0;
+//   let queue = [root];
+
+//   while(queue.length !== 0){
+//     const node = queue.shift();
+//     sum += node.val;
+
+//     node.left ? queue.push(node.left) : null;
+//     node.right ? queue.push(node.right) : null;
+//   }
+//   return sum;
+// }
+
 module.exports = {
   treeSum,
 };
