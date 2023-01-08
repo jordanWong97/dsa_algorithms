@@ -14,6 +14,29 @@ const treeIncludes = (root, target) => {
   return false;
 };
 
+//bfs iterative
+// const treeIncludes = (root, target) => {
+//   if(root === null) return false;
+//   const queue = [root];
+//   while(queue.length !== 0){
+//     const node = queue.shift();
+//     if(node.val === target){
+//       return true;
+//     }
+//     node.left ? queue.push(node.left): null;
+//     node.right ? queue.push(node.right): null;
+//   }
+//   return false;
+// }
+
+//recursive dfs
+// const treeIncludes = (root, target) => {
+//   if(root === null) return false;
+//   if(root.val === target) return true;
+
+//   return treeIncludes(root.left, target) || treeIncludes(root.right, target);
+// }
+
 module.exports = {
   treeIncludes,
 };
